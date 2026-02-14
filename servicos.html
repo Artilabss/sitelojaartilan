@@ -2,14 +2,15 @@
 <html lang="pt-br">
 <head>
 <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Serviços - Artilan</title>
-<link rel="stylesheet" href="Style.css">
+<link rel="stylesheet" href="style.css">
 </head>
 <body>
 
 <header>
   <div class="logo-area">
-    <img src="logo.png">
+    <img src="logo.png" alt="Logo Artilan">
     <div class="brand">Artilan</div>
   </div>
 
@@ -24,31 +25,31 @@
   </nav>
 </header>
 
-<section class="section">
-
-  <div class="artigo">
-    <img src="servico1.jpg">
-    <div class="artigo-texto">
-      <h2>Peças sob medida</h2>
+<section class="servicos">
+  <div class="servico">
+    <img src="servico1.jpg" alt="">
+    <div>
+      <h2>Peças Sob Medida</h2>
       <p>Desenvolvidas junto com você, respeitando intenção e uso real.</p>
     </div>
   </div>
 
-  <div class="artigo">
-    <img src="servico2.jpg">
-    <div class="artigo-texto">
-      <h2>Presentes afetivos</h2>
+  <div class="servico">
+    <img src="servico2.jpg" alt="">
+    <div>
+      <h2>Presentes Afetivos</h2>
       <p>Não é só um produto — é memória materializada.</p>
     </div>
   </div>
-
 </section>
 
-<footer>Artilan — mãos que contam histórias</footer>
+<script>
+const btn = document.querySelector(".menu-btn");
+const nav = document.querySelector("nav ul");
+btn.addEventListener("click",()=>{
+  nav.classList.toggle("active");
+});
+</script>
 
-<script src="script.js"></script>
 </body>
 </html>
-
-
-
