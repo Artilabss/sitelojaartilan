@@ -2,14 +2,15 @@
 <html lang="pt-br">
 <head>
 <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Artilan</title>
-<link rel="stylesheet" href="Style.css">
+<link rel="stylesheet" href="style.css">
 </head>
 <body>
 
 <header>
   <div class="logo-area">
-    <img src="logo.png">
+    <img src="logo.png" alt="Logo Artilan">
     <div class="brand">Artilan</div>
   </div>
 
@@ -25,7 +26,7 @@
 </header>
 
 <section class="hero">
-  <img src="foto.jpg">
+  <img src="foto.jpg" alt="Foto pessoal">
 
   <div class="hero-text">
     <h1>Feito à mão carrega história.</h1>
@@ -38,28 +39,24 @@
 
 <footer>
   <h2>Vamos conversar?</h2>
-  <p>Meu trabalho vive fora da tela também.</p>
 
   <div class="footer-links">
-
-    <a href="#">
-      <svg viewBox="0 0 24 24"><path d="M5 4l14 8-14 8z"/></svg>
-      Shopee
-    </a>
-
-    <a href="#">
-      <svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/></svg>
-      Instagram
-    </a>
-
-    <a href="#">
-      <svg viewBox="0 0 24 24"><path d="M2 22l4-1 14-14-3-3L3 18z"/></svg>
-      WhatsApp
-    </a>
-
+    <a href="#">Shopee</a>
+    <a href="#">Instagram</a>
+    <a href="#">WhatsApp</a>
   </div>
 </footer>
 
-<script src="script.js"></script>
+<script>
+const btn = document.querySelector(".menu-btn");
+const nav = document.querySelector("nav ul");
+
+btn.addEventListener("click",()=>{
+  nav.classList.toggle("active");
+});
+</script>
+
 </body>
 </html>
+
+
