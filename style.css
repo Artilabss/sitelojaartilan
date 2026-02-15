@@ -204,6 +204,7 @@ footer{
         text-align:center;
     }
 }
+
 /* RODAPÉ HUMANO */
 footer{
     background:var(--azul);
@@ -218,32 +219,48 @@ footer h2{
     margin-bottom:10px;
 }
 
+footer p{
+    opacity:0.85;
+}
+
 .footer-links{
     display:flex;
     gap:35px;
-    margin-top:18px;
+    margin-top:25px;
+    flex-wrap:wrap;
 }
 
 .footer-links a{
     display:flex;
     align-items:center;
-    gap:10px;
+    gap:12px;
     color:white;
     text-decoration:none;
     font-size:18px;
-    transition:0.3s;
+    transition:0.3s ease;
 }
 
+/* Ícones SVG */
+.footer-links svg{
+    width:28px;
+    height:28px;
+    fill:var(--bege);
+    transition:0.3s ease;
+}
+
+/* Hover elegante */
 .footer-links a:hover{
-    transform:translateY(-3px);
-    opacity:0.8;
+    transform:translateY(-4px);
 }
 
-/* RESPONSIVO */
+.footer-links a:hover svg{
+    fill:white;
+}
+
+/* MOBILE */
 @media (max-width:768px){
     .footer-links{
         flex-direction:column;
-        gap:18px;
-        text-align:center;
+        gap:20px;
     }
 }
